@@ -1,0 +1,9 @@
+#include <SoftwareSerial.h>
+#define DEBUG true
+--make Pin 9 as the RX pin and the pin 10 as the TX pin for the ESP8266--
+SoftwareSerial esp8266(9,10); 
+#include <LiquidCrystal.h> 
+LiquidCrystal lcd(12,11, 5, 4, 3, 2);
+const int sensorPin= 0;
+int air_quality;
+--defined two variables: one for the sensor analog pin and other for storing air_quality value--
