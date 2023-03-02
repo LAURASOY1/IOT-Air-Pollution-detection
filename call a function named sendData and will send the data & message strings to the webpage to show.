@@ -1,0 +1,8 @@
+     sendData(cipSend,1000,DEBUG);
+     sendData(webpage,1000,DEBUG);
+     
+     cipSend = "AT+CIPSEND=";
+     cipSend += connectionId;
+     cipSend += ",";
+     cipSend +=webpage.length();
+     cipSend +="\r\n";
