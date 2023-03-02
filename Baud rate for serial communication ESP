@@ -1,5 +1,6 @@
 Serial.begin(115200);
 esp8266.begin(115200);
+--send the commands to set the ESP to communicate with the Arduino and show the IP address on the serial monitor--
   sendData("AT+RST\r\n",2000,DEBUG);
   sendData("AT+CWMODE=2\r\n",1000,DEBUG);
   sendData("AT+CIFSR\r\n",1000,DEBUG);
