@@ -1,0 +1,2 @@
+MQ135 gasSensor = MQ135(A0);
+float air_quality = gasSensor.getPPM();
