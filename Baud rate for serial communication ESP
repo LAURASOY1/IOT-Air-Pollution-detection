@@ -1,0 +1,9 @@
+Serial.begin(115200);
+esp8266.begin(115200);
+  sendData("AT+RST\r\n",2000,DEBUG);
+  sendData("AT+CWMODE=2\r\n",1000,DEBUG);
+  sendData("AT+CIFSR\r\n",1000,DEBUG);
+  sendData("AT+CIPMUair_quality=1\r\n",1000,DEBUG);
+  sendData("AT+CIPSERVER=1,80\r\n",1000,DEBUG);
+pinMode(sensorPin, INPUT);
+lcd.clear();
