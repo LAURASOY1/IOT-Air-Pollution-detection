@@ -1,0 +1,7 @@
+pinMode(8, OUTPUT);
+lcd.begin(16,2);
+lcd.setCursor (0,0);
+lcd.print ("Sensor Reading ");
+lcd.setCursor (0,1);
+lcd.print ("Sensor Warming ");
+delay(1000);
